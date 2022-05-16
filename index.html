@@ -15,52 +15,78 @@
     </div>
 </nav>
 <!--navbar-->
+
 <!--cards-->
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col">
+            <!--blank card left-->
+            <div class="card border-0">
+                <div class="col-12 card-body">
+                    <label for="blankRoastTypes" class="form-label fs-4 fw-bold">Roast</label>
+                    <input class="form-control" list="blankRoastTypes" id="blankRoastOptions">
+                    <datalist id="blankRoastTypes">
+                        <option value="All">
+                        <option value="Light">
+                        <option value="Medium">
+                        <option value="Dark">
+                    </datalist>
+                    <label for="blankCoffeeNames" class="form-label fs-4 fw-bold">Coffee Name</label>
+                    <input class="form-control" list="blankDatalistCoffeeNames" id="blankCoffeeNames">
+                    <datalist id="blankDatalistCoffeeNames"></datalist>
 
-<div class="card border-0">
-    <div class="card-body">
-        <label for="roastOptions" class="form-label fs-4 fw-bold">Roast</label>
-        <input class="form-control" list="roastTypes" id="roastOptions">
-        <datalist id="roastTypes">
-            <option value="All">
-            <option value="Light">
-            <option value="Medium">
-            <option value="Dark">
-        </datalist>
+                    <h1 class="text-center m-4 border-top border-2 pt-4">Add Coffee</h1>
+                    <label for="blankRoastOptions2" class="form-label fs-4 fw-bold">Roast</label>
+                    <input class="form-control" list="blankRoastTypes2" id="blankRoastOptions2">
+                    <datalist id="blankRoastTypes2">
+                        <option value="All">
+                        <option value="Light">
+                        <option value="Medium">
+                        <option value="Dark">
+                    </datalist>
+                    <label for="blankCoffeeNames2" class="form-label fs-4 fw-bold">Name</label>
+                    <input class="form-control" list="blankDatalistCoffeeNames2" id="blankCoffeeNames2">
+                    <datalist id="blankDatalistCoffeeNames2"></datalist>
+                </div>
+            </div>
+        </div>
+        <!--blank card left-->
+        <!--coffee card right-->
+        <div class="card border-0">
+            <div class="col-12 card-body">
+                <label for="roastOptions" class="form-label fs-4 fw-bold">Roast</label>
+                <input class="form-control" list="roastTypes" id="roastOptions">
+                <datalist id="roastTypes">
+                    <option value="All">
+                    <option value="Light">
+                    <option value="Medium">
+                    <option value="Dark">
+                </datalist>
+                <label for="coffeeNames" class="form-label fs-4 fw-bold">Coffee Name</label>
+                <input class="form-control" list="datalistCoffeeNames" id="coffeeNames">
+                <datalist id="datalistCoffeeNames"></datalist>
+                <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
 
-        <label for="coffeeNames" class="form-label fs-4 fw-bold">Coffee Name</label>
-        <input class="form-control" list="datalistCoffeeNames" id="coffeeNames">
-        <datalist id="datalistCoffeeNames"></datalist>
-        <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
-
-        <h1 class="text-center m-4 border-top pt-4">Add Coffee</h1>
-
-        <label for="roastOptions2" class="form-label fs-4 fw-bold">Roast</label>
-        <input class="form-control" list="roastTypes2" id="roastOptions2">
-        <datalist id="roastTypes2">
-            <option value="All">
-            <option value="Light">
-            <option value="Medium">
-            <option value="Dark">
-        </datalist>
-
-        <label for="coffeeNames2" class="form-label fs-4 fw-bold">Name</label>
-        <input class="form-control" list="datalistCoffeeNames2" id="coffeeNames2">
-        <datalist id="datalistCoffeeNames2"></datalist>
-        <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
+                <h1 class="text-center m-4 border-top border-2 pt-4">Add Coffee</h1>
+                <label for="roastOptions2" class="form-label fs-4 fw-bold">Roast</label>
+                <input class="form-control" list="roastTypes2" id="roastOptions2">
+                <datalist id="roastTypes2">
+                    <option value="All">
+                    <option value="Light">
+                    <option value="Medium">
+                    <option value="Dark">
+                </datalist>
+                <label for="coffeeNames2" class="form-label fs-4 fw-bold">Name</label>
+                <input class="form-control" list="datalistCoffeeNames2" id="coffeeNames2">
+                <datalist id="datalistCoffeeNames2"></datalist>
+                <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
+            </div>
+        </div>
+        <!--coffee card right-->
     </div>
 </div>
 <!--cards-->
 
-<form>
-    <label for="roast-selection"></label>
-    <select id="roast-selection">
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
-    </select>
-    <input id="submit" type="submit"/>
-</form>
 
 <table>
     <thead>

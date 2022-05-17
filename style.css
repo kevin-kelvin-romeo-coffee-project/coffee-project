@@ -26,6 +26,6 @@ td, th {
 
 }
 
-.light1, .light2, .light3, .medium1, .medium2, .medium3, .dark1, .dark2, .dark3, .dark4, .dark5, .dark6, .dark7, .dark8{
+.light{
     color: lightgrey;
 }

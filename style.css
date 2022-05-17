@@ -8,3 +8,20 @@ td, th {
     padding: 5px 10px;
 }
 
+#coffees{
+
+}
+
+.coffee-id{
+    display: none;
+}
+
+.coffee-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.coffee-roast{
+    font-size: 16px;
+    color: lightgrey;
+
+}

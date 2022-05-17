@@ -57,7 +57,20 @@ let roastSelection = document.querySelector('#roast-selection');
 // submitButton.addEventListener('click', updateCoffees);
 // console.log(coffees);
 
-
+window.localStorage.setItem('lightCity', JSON.stringify(coffees[0]));
+window.localStorage.setItem('halfCity', JSON.stringify(coffees[1]));
+window.localStorage.setItem('cinnamon', JSON.stringify(coffees[2]));
+window.localStorage.setItem('city', JSON.stringify(coffees[3]));
+window.localStorage.setItem('american', JSON.stringify(coffees[4]));
+window.localStorage.setItem('breakfast', JSON.stringify(coffees[5]));
+window.localStorage.setItem('high', JSON.stringify(coffees[6]));
+window.localStorage.setItem('continental', JSON.stringify(coffees[7]));
+window.localStorage.setItem('newOrleans', JSON.stringify(coffees[8]));
+window.localStorage.setItem('european', JSON.stringify(coffees[9]));
+window.localStorage.setItem('espresso', JSON.stringify(coffees[10]));
+window.localStorage.setItem('viennese', JSON.stringify(coffees[11]));
+window.localStorage.setItem('italian', JSON.stringify(coffees[12]));
+window.localStorage.setItem('french', JSON.stringify(coffees[13]));
 console.log(window.localStorage);
 
 //Card Start

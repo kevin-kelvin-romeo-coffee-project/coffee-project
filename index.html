@@ -23,7 +23,7 @@
             <!--blank card left-->
             <div>
                 <div class="card">
-                    <div id="coffees"class="row m-1"></div>
+                    <div id="coffees" class="row m-1"></div>
                 </div>
             </div>
         </div>
@@ -31,28 +31,31 @@
         <!--coffee card right-->
         <div class="card border-0">
             <div class="col-12 card-body p-0">
-                <label for="roastOptions" class="form-label fs-4 fw-bold">Roast</label>
-                <input class="form-control" list="roastTypes" id="roastOptions">
-                <datalist id="roastTypes">
-                    <option value="All">
-                    <option value="Light">
-                    <option value="Medium">
-                    <option value="Dark">
-                </datalist>
+                <label class="form-label fs-4 fw-bold">Roast</label>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected value="all">All</option>
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+
+
                 <label for="coffeeNames" class="form-label fs-4 fw-bold">Coffee Name</label>
                 <input class="form-control" list="datalistCoffeeNames" id="coffeeNames">
                 <datalist id="datalistCoffeeNames"></datalist>
                 <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
 
                 <h1 class="text-center m-4 border-top border-2 pt-4">Add Coffee</h1>
-                <label for="roastOptions2" class="form-label fs-4 fw-bold">Roast</label>
-                <input class="form-control" list="roastTypes2" id="roastOptions2">
-                <datalist id="roastTypes2">
-                    <option value="All">
-                    <option value="Light">
-                    <option value="Medium">
-                    <option value="Dark">
-                </datalist>
+                <label class="form-label fs-4 fw-bold">Roast</label>
+
+                <select class="form-select" >
+                    <option selected value="all">All</option>
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+
                 <label for="coffeeNames2" class="form-label fs-4 fw-bold">Name</label>
                 <input class="form-control" list="datalistCoffeeNames2" id="coffeeNames2">
                 <datalist id="datalistCoffeeNames2"></datalist>
@@ -64,8 +67,15 @@
 </div>
 <!--cards-->
 
+<div class="card">
+    <div class="lightC"></div>
+    <div class="light"></div>
+</div>
 
-
+<div class="card">
+    <div class="breakfast"></div>
+    <div class="light"></div>
+</div>
 
 
 <script src="main.js"></script>

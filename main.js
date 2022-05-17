@@ -54,10 +54,18 @@ let roastSelection = document.querySelector('#roast-selection');
 
 tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
-console.log(coffees);
+// submitButton.addEventListener('click', updateCoffees);
+// console.log(coffees);
 
 
-// let lightC = document.querySelector('#lightC');
-// lightC.innerHTML = coffees[0].name;
+console.log(window.localStorage);
+
+//Light City
+// let test = window.localStorage.getItem('lightCity');
+// let lightC = JSON.parse(test);
+// let testBody = document.querySelector('.lightC')
+// testBody.innerHTML = lightC.name;
+
+
+
 

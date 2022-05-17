@@ -49,16 +49,30 @@ let coffees = [
 ];
 
 let tbody = document.querySelector('#coffees');
-let submitButton = document.querySelector('#submit');
+// let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
+roastSelection.addEventListener('change', updateCoffees)
+let coffeeSelection = document.querySelector('#coffeeNames')
+coffeeSelection.addEventListener('keyup',nameOfCoffee )
 
 tbody.innerHTML = renderCoffees(coffees);
+function nameOfCoffee(){
+    let drinks = []
+    let selectedCoffee= coffeeSelection.value.toLowerCase();
+    for(let coffee of coffees){
+        if (coffee.name.toLowerCase().includes(selectedCoffee) ){
+            drinks.push(coffee)
+        }
+    }
+    tbody.innerHTML = renderCoffees(drinks);
+}
+// document.getElementById("coffeeNames").addEventListener("change", nameOfCoffee)
 
 // submitButton.addEventListener('click', updateCoffees);
 // console.log(coffees);
 
 
-console.log(window.localStorage);
+// console.log(window.localStorage);
 
 //Light City
 // let test = window.localStorage.getItem('lightCity');

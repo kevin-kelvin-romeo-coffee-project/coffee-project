@@ -58,9 +58,10 @@ coffeeSelection.addEventListener('keyup',nameOfCoffee )
 tbody.innerHTML = renderCoffees(coffees);
 function nameOfCoffee(){
     let drinks = []
+    let selectedRoast = roastSelection.value;
     let selectedCoffee= coffeeSelection.value.toLowerCase();
     for(let coffee of coffees){
-        if (coffee.name.toLowerCase().includes(selectedCoffee) ){
+        if (coffee.name.toLowerCase().includes(selectedCoffee) && coffee.roast === selectedRoast){
             drinks.push(coffee)
         }
     }

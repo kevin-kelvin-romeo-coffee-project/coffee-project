@@ -65,11 +65,11 @@ let submitButton = document.querySelector('#submitButton');
 let addingRoast = document.querySelector('#addedRoast')
 
 let addCoffee = function() {
-    let obj = {};
-    obj.name = addingCoffee.value;
-    obj.roast = addingRoast.value;
-    coffees.push(obj);
-    tbody.innerHTML = renderCoffees(coffees);
+let obj = {};
+obj.name = addingCoffee.value;
+obj.roast = addingRoast.value;
+coffees.push(obj);
+tbody.innerHTML = renderCoffees(coffees);
 }
 
 console.log(coffees);

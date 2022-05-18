@@ -74,9 +74,10 @@ h1{
     background-image: url("img/coffee-cup-side-view.png");
     background-size: cover;
     border-radius: 100%;
-    height: 5em;
-    width: 5em;
+    height: 6em;
+    width: 6em;
 }
+
 
 .coffee-id {
     color: rgba(255, 255, 255, 0);

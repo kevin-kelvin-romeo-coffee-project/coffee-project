@@ -83,6 +83,8 @@ function nameOfCoffee(){
     for(let coffee of coffees){
         if (coffee.name.toLowerCase().includes(selectedCoffee) && coffee.roast === selectedRoast){
             drinks.push(coffee)
+        } else if (coffee.name.toLowerCase().includes(selectedCoffee) && roastSelection.value === 'all'){
+            drinks.push(coffee);
         }
     }
     tbody.innerHTML = renderCoffees(drinks);

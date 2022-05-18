@@ -29,3 +29,35 @@ td, th {
 .light{
     color: lightgrey;
 }
+
+body {
+    background: none;
+}
+
+#cardLeft {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 32em;
+}
+
+#cardRight {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 32em;
+}
+
+#btn1 {
+    background-color: #493019;
+}
+
+#submitButton {
+    background-color: #493019;
+}
+
+body {
+    background-image: url("img/coffeebeans.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background: linear-gradient(#493019, rgba(0, 0, 0, 0.1));
+}

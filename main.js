@@ -56,8 +56,23 @@ let coffeeSelection = document.querySelector('#coffeeNames')
 coffeeSelection.addEventListener('keyup',nameOfCoffee )
 
 tbody.innerHTML = renderCoffees(coffees);
+//-----------------------------------------//
+
+let addingCoffee = document.querySelector('#addedCoffee');
+
+let addCoffee = function() {
+window.localStorage.setItem('coffeeAdded', JSON.stringify(addingCoffee.value));
+let coffeeToAdd = JSON.parse(window.localStorage.getItem('coffeeAdded'));
+coffees.push(coffeeToAdd);
+tbody.innerHTML = renderCoffees(coffees);
+}
+
+console.log(coffees);
+addingCoffee.addEventListener('input', addCoffee);
+
+
 function nameOfCoffee(){
-    let drinks = []
+    let drinks = [];
     let selectedRoast = roastSelection.value;
     let selectedCoffee= coffeeSelection.value.toLowerCase();
     for(let coffee of coffees){
@@ -66,7 +81,16 @@ function nameOfCoffee(){
         }
     }
     tbody.innerHTML = renderCoffees(drinks);
+
 }
+
+
+
+
+
+console.log(window.localStorage);
+
+
 // document.getElementById("coffeeNames").addEventListener("change", nameOfCoffee)
 
 // submitButton.addEventListener('click', updateCoffees);

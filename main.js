@@ -1,10 +1,10 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    let html = '<div class="coffee row col-6">';
-    html += '<div class="coffee-id">' + coffee.id + '</div>';
-    html += '<div class="coffee-name col-7">' + coffee.name + '</div>';
-    html += '<div class="coffee-roast col-5">' + coffee.roast + '</div>';
+    let html = '<div class="coffee pb-3 row col-6">';
+    html += '<div class="coffee-id img-class">' + coffee.id + '</div>';
+    html += '<div class="coffee-name col-6 h-middle">' + coffee.name + '</div>';
+    html += '<div class="coffee-roast col-6">' + coffee.roast + '</div>';
     html += '</div>';
 
     return html;
@@ -33,6 +33,7 @@ function updateCoffees(e) {
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},

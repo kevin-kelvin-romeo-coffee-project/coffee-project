@@ -13,7 +13,6 @@ td, th {
 }
 
 .coffee-id{
-    display: none;
 }
 
 .coffee-name {
@@ -34,14 +33,18 @@ body {
     background: none;
 }
 
-#cardLeft {
+#cardLeft{
     background-color: rgba(0, 0, 0, 0.5);
-    height: 35em;
+    height: auto;
+    width: 100%;
+    font-family: 'Rye', cursive;
 }
 
 #cardRight {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 35em;
+    height: auto;
+    width: 50%;
+    font-family: 'Rye', cursive;
 }
 
 #btn1 {
@@ -59,5 +62,25 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(#493019, rgba(0, 0, 0, 0.1));
+    background:linear-gradient(#493019, rgba(0, 0, 0, 0.1));
+    font-family: 'Rye', cursive;
 }
+
+h1{
+    font-family: 'Rye', cursive;
+}
+
+.img-class {
+    background-image: url("img/coffee-cup-side-view.png");
+    background-size: cover;
+    border-radius: 100%;
+    height: 5em;
+    width: 5em;
+}
+
+.coffee-id {
+    color: rgba(255, 255, 255, 0);
+}
+
+
+

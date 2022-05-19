@@ -48,11 +48,11 @@ body {
 }
 
 #btn1 {
-    background-color: #493019;
+    background-color: #273a1c;
 }
 
 #submitButton {
-    background-color: #493019;
+    background-color: #273a1c;
 }
 
 body {
@@ -62,7 +62,7 @@ body {
 }
 
 .navbar {
-    background:linear-gradient(#493019, rgba(0, 0, 0, 0.1));
+    background:linear-gradient(#493019, rgba(0, 0, 0, 0));
     font-family: 'Rye', cursive;
 }
 

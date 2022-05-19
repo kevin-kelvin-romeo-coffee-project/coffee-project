@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--navbar-->
-<nav class="navbar sticky-top">
+<nav class="navbar">
     <div class="container container-fluid">
         <span class="d-flex navbar-brand mx-auto border-bottom w-100 border-2 h1 pb-4 justify-content-center fs-1 text-light">Coffee!
          <i class="fa-solid fa-mug-hot" style="color: white; padding-left: 10px"></i>
@@ -24,14 +24,16 @@
 <!--welcome-->
 <div id="coaster-box" class="container">
     <div id="coaster-holder" class="row">
-        <div id="shadow" class="col-12 position-relative">
-                <img src="img/coaster.png" class="coaster-img position-absolute top-50 start-50 translate-middle">
+        <div id="shadow" class="position-relative">
+            <a id="img-link" href="#link">
+                <img src="img/coaster.png" class="coaster-img position-absolute top-50 start-50 translate-middle" alt="#link">
+            </a>
         </div>
     </div>
 </div>
 <!--welcome-->
 <!--cards-->
-<div class="container">
+<div id="link" class="container">
     <div class="row row-cols-2">
         <div class="col p-0">
             <!--blank card left-->

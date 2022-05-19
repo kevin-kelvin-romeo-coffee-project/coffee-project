@@ -34,14 +34,14 @@ body {
 }
 
 #cardLeft{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(73, 48, 25, 0.5);
     height: auto;
     width: 100%;
     font-family: 'Rye', cursive;
 }
 
 #cardRight {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(73, 48, 25, 0.5);
     height: auto;
     width: 50%;
     font-family: 'Rye', cursive;
@@ -83,9 +83,8 @@ h1{
     color: rgba(255, 255, 255, 0);
 }
 
-.welcome {
-    height: 25em;
-    background-image: url("img/coaster.png");
+#shadow {
+    height: auto;
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
@@ -94,8 +93,10 @@ h1{
     width: 30%;
 }
 
-.welcomeText {
-    font-family: 'Rye', cursive;
+#coaster-holder {
+    height: 42em;
 }
+
+
 
 
